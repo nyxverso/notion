@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+};
+			padding: 4px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #b5b597;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 10px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #000000;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-chimney"></i> Home</a>
+		<a id="disciplinas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Disciplinas</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Anotações</a>
+		<a id="redacoes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-lines"></i> Redações</a>
+		<a id="simulados" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clipboard-question"></i> Simulados</a>
+		<a id="recursos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder-open"></i> Recursos</a>
+		<a id="library" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Biblioteca</a>
+		<a id="watchlist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clapperboard"></i> Watchlist</a>
+		<a id="journal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-feather"></i> Journal</a>
+		<a id="database" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-server"></i> Data-base</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/22235296b690809ba251e95f767e6444", '_blank').focus();
+			else if (id == "disciplinas")
+				window.open("https://www.notion.so/Disciplinas-22235296b69081ba9c44e1a614772ee2", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/Anota-es-22235296b69081949a60eafa23c05212", '_blank').focus();
+			else if (id == "redacoes")
+				window.open("https://www.notion.so/Reda-es-22235296b69081c2bda8d8d4f6c137f9", '_blank').focus();
+			else if (id == "simulados")
+				window.open("https://www.notion.so/Simulados-22235296b690810d8397f154a61a931a", '_blank').focus();
+			else if (id == "recursos")
+				window.open("https://www.notion.so/Recursos-23b35296b690803b88c2f6f85033f472", '_blank').focus();
+			else if (id == "library")
+				window.open("https://www.notion.so/Biblioteca-22235296b690815bbd31df6c4e39331b", '_blank').focus();
+			else if (id == "watchlist")
+				window.open("https://www.notion.so/Watchlist-22235296b690811281d4e042c632c07f", '_blank').focus();
+			else if (id == "journal")
+				window.open("https://www.notion.so/Journal-22235296b690815499f9e2975594e74b", '_blank').focus();
+			else if (id == "database")
+				window.open("https://www.notion.so/Data-base-22235296b690810daafec6e2410e0f3f", '_blank').focus();
+		
+			
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
